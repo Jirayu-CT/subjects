@@ -1,0 +1,7 @@
+E:\OneDrive - Buriram Rajabhat University\My university information\subjects\P2_1.2567\advanced_programming\test\test\obj\Debug\test.csproj.AssemblyReference.cache
+E:\OneDrive - Buriram Rajabhat University\My university information\subjects\P2_1.2567\advanced_programming\test\test\obj\Debug\test.csproj.CoreCompileInputs.cache
+E:\OneDrive - Buriram Rajabhat University\My university information\subjects\P2_1.2567\advanced_programming\test\test\bin\Debug\test.exe.config
+E:\OneDrive - Buriram Rajabhat University\My university information\subjects\P2_1.2567\advanced_programming\test\test\bin\Debug\test.exe
+E:\OneDrive - Buriram Rajabhat University\My university information\subjects\P2_1.2567\advanced_programming\test\test\bin\Debug\test.pdb
+E:\OneDrive - Buriram Rajabhat University\My university information\subjects\P2_1.2567\advanced_programming\test\test\obj\Debug\test.exe
+E:\OneDrive - Buriram Rajabhat University\My university information\subjects\P2_1.2567\advanced_programming\test\test\obj\Debug\test.pdb
