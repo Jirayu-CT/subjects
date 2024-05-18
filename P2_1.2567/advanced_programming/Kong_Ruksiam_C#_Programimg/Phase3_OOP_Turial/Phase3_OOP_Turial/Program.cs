@@ -8,26 +8,32 @@ namespace Phase3_OOP_Turial
         {
             //object
 
-            Employee emp1 = new Accounting();
-            emp1.Name = "somsak";
-            emp1.Salary = 80000;
+            Accounting emp1 = new Accounting("jirayu", 80000, "famale");
+            Sale emp2 = new Sale("pompam", 100000, "biriram");
+            IT emp3 = new IT("prame", 80000, 5);
 
-            Employee emp2 = new Sale();
-            emp2.Name = "jojo";
-            emp2.Salary = 70000;
+            //static file ไม่สร้าง object
+            /*Console.WriteLine("Name = " + Company.name);
+            Console.WriteLine("Founder = " + Company.founder);*/
 
-            Console.WriteLine("Name: " + emp1.Name);
-            Console.WriteLine("Salary: " + emp1.Salary);
+            //static method
+            /*
+            Company.addEmployee(emp1);
+            Company.addEmployee(emp2);
+            Company.addEmployee(emp3);
+            Company.addEmployee(new Accounting("Boss", 8000, "mail"));
 
-            Console.WriteLine("Name: " + emp2.Name);
-            Console.WriteLine("Salary: " + emp2.Salary);
+            Company.get_Employees();*/
+
+            emp1.show_Uniform();
+            emp2.show_Uniform();
+            emp3.show_Uniform();
+
 
             /*
             Employee emp1 = new Employee("Jirayu", 55000);
             Employee emp2 = new Employee("pompam", 15000);
             Employee emp3 = new Employee("jojo", 9000);*/
-
-
 
             /*
             emp1.set_name("jirayu chomthong");

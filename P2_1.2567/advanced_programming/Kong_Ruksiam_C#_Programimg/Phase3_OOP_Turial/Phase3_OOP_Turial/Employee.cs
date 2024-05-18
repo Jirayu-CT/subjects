@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace Phase3_OOP_Turial
 {
-    internal class Employee
+    abstract internal class Employee
     {
         //field
         private String _name;
         private int _salary;
+        //protected class ลูกใช้ได้เท่านั้น
+        protected string _email = "pram0940603006@gmail.com";
 
         //default constructor
         public Employee() 
@@ -42,6 +44,16 @@ namespace Phase3_OOP_Turial
         //สร้างอัตโนมัติ Encapsulate Field
         public string Name { get => _name; set => _name = value; }
         public int Salary { get => _salary; set => _salary = value; }
+
+        public virtual void show_Employee()
+        {
+            Console.WriteLine("Name: " + this.Name);
+            Console.WriteLine("Salary: " + this.Salary);
+            Console.WriteLine("-------------------");
+        }
+
+        //abstract ต้องทำให้เป็น abstract class
+        public abstract double report_income();
 
 
         /*
