@@ -16,11 +16,11 @@ namespace OOP3
 
         public Ractangle(double width, double height)
         {
-            _width = CheckNumber(width);
-            _height = CheckNumber(height);
+            Width = width;
+            Height = height;
         }
 
-        public double CheckNumber(double value)
+        private double CheckNumber(double value)
         {
             if (value >= 0)
             {
@@ -33,33 +33,40 @@ namespace OOP3
         }
 
 
-        public double GetWidth()
+        public double Width
         {
-            
-            return CheckNumber(_width);
+            get { return _width; }
+            set
+            {
+                _width = CheckNumber(value);
+            }
         }
 
-        public void SetWidth(double width)
+        public double Height
         {
-            _width = CheckNumber(width);
+            get { return _height; }
+            set
+            {
+                _height = CheckNumber(value);
+            }
         }
 
-
-        public double GetHeight()
+        public double Area
         {
-            return CheckNumber(_height);
-        }
-
-        public void SetHeight(double height)
-        {
-            _height = CheckNumber(height);
-        }
-
-
-        public double GetArea()
-        {
-            _area = _height * _width;
-            return _area;
+            get {
+                _area = _height * _width;
+                return _area;
+            }
         }
     }
 }
+
+/*Ractangle ractangle1 = new Ractangle(width: 50, height: -5);
+            
+            ractangle1.Width = -5;
+            ractangle1.Height = 50;
+
+            Console.WriteLine("Width: " + ractangle1.Width); 
+            Console.WriteLine("Height: " + ractangle1.Height);
+            Console.WriteLine("Ractangle = " + ractangle1.Area);*/
+

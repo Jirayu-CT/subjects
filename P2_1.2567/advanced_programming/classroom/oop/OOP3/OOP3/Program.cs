@@ -11,15 +11,15 @@ namespace OOP3
         static void Main(string[] args)
         {
             Ractangle ractangle1 = new Ractangle(width: 50, height: -5);
-            
-            ractangle1.SetWidth(-5);
-            ractangle1.SetHeight(50);
 
-            Console.WriteLine("Width: " + ractangle1.GetWidth()); 
-            Console.WriteLine("Height: " + ractangle1.GetHeight());
-            Console.WriteLine("Ractangle = " + ractangle1.GetArea());
+            ractangle1.Width = -5;
+            ractangle1.Height = 50;
+
+            Console.WriteLine("Width: " + ractangle1.Width);
+            Console.WriteLine("Height: " + ractangle1.Height);
+            Console.WriteLine("Ractangle = " + ractangle1.Area);
 
             Console.ReadLine();
         }
     }
-}
+} 
