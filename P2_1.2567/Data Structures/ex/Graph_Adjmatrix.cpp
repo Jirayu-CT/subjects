@@ -32,8 +32,12 @@ void displayMatrix(int adjMatrix[V][V]) {
 
     cout << endl;
     for (int i = 0; i < V; i++) {
-        cout << "B" << i+1 << " ";
+        cout << "B" << i+1 << "  ";
         for (int j = 0; j < V; j++) {
+            if (adjMatrix[i][j+1] >= 10 && adjMatrix[i][j+1] <= 99){
+                cout << adjMatrix[i][j] << " ";
+                continue;
+            }
             cout << adjMatrix[i][j] << "  ";
         }
         cout << endl;
