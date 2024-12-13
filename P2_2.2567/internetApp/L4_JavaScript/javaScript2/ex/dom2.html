@@ -9,23 +9,26 @@
 </head>
 
 <body class="bg-gray-100">
-
+    <!-- 
+        2.  สร้าง textbox และปุ่ม "เพิ่มรายการ" เมื่อผู้ใช้กรอกข้อมูลใน textbox 
+            และกดปุ่ม ให้นำค่าใน textbox มาเพิ่ม<li> ใหม่เข้าไปใน <ul> 
+            โดยในแต่ละรายการจะต้องมีปุ่มลบรายการออกจากลิสต์
+    -->
     <div class="container justify-items-center mx-auto px-4 m-5">
         <div class="p-4 text-center shadow-lg w-[400px] rounded-md bg-white mx-auto">
             <h1 class="text-4xl mb-4 font-bold text-[#333333]">To-Do List</h1>
             <div class="flex gap-2 mb-4">
                 <input type="text" id="text-box" class="p-1 rounded-md border w-[350px]" placeholder="Add a new task">
-                <button 
-                    onclick="addTextBox()"
+                <button onclick="addTextBox()"
                     class="p-2 rounded-md bg-green-500 text-white hover:bg-green-600">Add</button>
             </div>
             <ul id="text-list">
 
             </ul>
         </div>
-        
+
     </div>
-    
+
     <script>
         function addTextBox() {
             const textBox = document.getElementById("text-box");
