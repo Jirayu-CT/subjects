@@ -69,4 +69,6 @@ void bubbleSort(int arr[], int n){
 int main(){
     int n = 8;
     int data[n] = {50, 85, 45, 10, 99, 42, 5, 33};
+
+    SelectionSort(data,n);
 }
